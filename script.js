@@ -15,7 +15,8 @@ filterButtons.forEach((button) => {
     let visibleCount = 0;
 
     workCards.forEach((card) => {
-      const shouldShow = selectedFilter === "all" || card.dataset.category === selectedFilter;
+      const categories = card.dataset.category.split(" ");
+      const shouldShow = selectedFilter === "all" || categories.includes(selectedFilter);
       card.classList.toggle("hidden", !shouldShow);
       if (shouldShow) {
         visibleCount += 1;

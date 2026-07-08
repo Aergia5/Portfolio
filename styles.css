@@ -404,6 +404,39 @@ h3 {
   display: none;
 }
 
+.wip-card {
+  border-style: dashed;
+}
+
+.wip-preview {
+  display: grid;
+  min-height: 230px;
+  align-content: end;
+  gap: 12px;
+  padding: 20px;
+  border-bottom: 1px dashed var(--line);
+  background:
+    linear-gradient(90deg, rgba(23, 21, 31, 0.08) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(23, 21, 31, 0.08) 1px, transparent 1px),
+    linear-gradient(135deg, rgba(255, 90, 95, 0.16), rgba(0, 167, 181, 0.16));
+  background-size: 26px 26px, 26px 26px, auto;
+}
+
+.wip-preview span {
+  width: fit-content;
+  padding: 8px 10px;
+  border: 2px solid var(--ink);
+  border-radius: 5px;
+  background: var(--lime);
+  font-weight: 900;
+}
+
+.wip-preview strong {
+  max-width: 260px;
+  font-size: 2rem;
+  line-height: 0.98;
+}
+
 .empty-state {
   margin: 18px 0 0;
   padding: 18px;
